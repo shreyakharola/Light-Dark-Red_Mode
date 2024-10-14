@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --primary-font-size: 12px;
+    --secondary-font-size: 10px;
+    --primary-gap: 10px;
+    --primary-line-height: 1.5;
+    --primary-font-family: sans-serif;
+
+} 
+
+html, body {
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+    line-height: var(--primary-line-height);
+    font-family: var(--primary-font-family);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+ a {
+    text-decoration: none; 
+    padding: 0 15px; 
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    
+}
+
+.column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column2 ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+.column1 {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 80px;
+    
+}
+
+select{
+    border:none;
+    font-weight: bold;
+    padding: 0 15px;
+  }
+  
+select:focus{
+    outline:none;
+  }
+
+.home-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(179, 241, 220);
+}
+
+
+.home {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+
+.column {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.img-dog {
+    position: relative;
+    width: 100%;
+}
+
+
+.dog-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+}
+
+
+.img-des {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.column-2 {
+    flex: 2;
+    min-width: 300px;
+}
+
+
+.long-des {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(187, 229, 243);
+    margin: 101px 0px;
+}
+
+.footer-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    background-color: #3A3E63; 
+    }
+    
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+
+.f-heading{
+    margin-top: 0;
+    font-size: var(--secondary-font-size);;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+.f-subheading{
+    color: #797C9A;
+    font-size: var(--primary-font-size);
+    font-family: 'glyphicons', Georgia, 'Times New Roman', Times, serif;
+    
+}
+.f-row-2{
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    font-family: var(--secondary-font);
+    background-color: #313455;
+    color: snow;
+}
+
+
+.light-mode {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+ 
+.light-mode .home-container {
+    background-color: rgb(179, 241, 220); 
+}
+
+.light-mode .stats {
+    background-color: rgb(187, 229, 243); 
+}
+
+.light-mode .footer-1 {
+    background-color: #3A3E63; 
+}
+
+.light-mode .f-row-2 {
+    background-color: #313455; 
+}
+
+.light-mode .f-heading,
+.light-mode .f-subheading {
+    color: var(--primary-color);
+}
+
+/* dark mode */
+.dark-mode,
+.dark-mode a,
+.dark-mode select {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.dark-mode .home-container{
+    background-color: rgb(41, 110, 87);
+}
+
+.dark-mode .stats{
+    background-color: rgb(7, 102, 133);
+}
+
+/* red mode */
+.red-mode, 
+.red-mode a,
+.red-mode select{
+    background-color: #FF0000;
+    color: #FFE8C5;
+}
+
+.red-mode .home-container{
+    background-color: #FF0000;
+}
+
+.red-mode .stats{
+    background-color: #97BE5A;
+}
+.red-mode .home-container {
+    background-color: #FFA27F;
+}
+
+.red-mode .footer-1 {
+    background-color: #A02334;
+}
+.red-mode .f-row-2 {
+    background-color: #61101b;
+}
+.red-mode .f-heading,
+.red-mode .f-subheading{
+    color: #FFEEAD;
+}
